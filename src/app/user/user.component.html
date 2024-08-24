@@ -1,0 +1,48 @@
+<body>
+<div class="add-user-container">  
+  <h2 class="add-user-heading">Add User</h2>
+  
+  <form (ngSubmit)="onSubmit()" #userForm="ngForm" class="add-user-form">
+    
+    <div>
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" name="firstName" required>
+    </div>
+  
+    <div>
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" name="lastName" required>
+    </div>
+  
+    <div>
+      <label for="dateCreated">Date Created:</label>
+      <input type="date" id="dateCreated" name="dateCreated" required>
+    </div>
+  
+    <div>
+      <label for="role">Role:</label>
+      <select id="role" name="role" required>
+        <option value="Admin">Admin</option>
+        <option value="Publisher">Publisher</option>
+        <option value="Reviewer">Reviewer</option>
+        <option value="Moderator">Moderator</option>
+      </select>
+    </div>
+  
+    <div>
+      <label>Status:</label>
+      <input type="radio" id="active" name="status" value="Active" required>
+      <label for="active" class="status-label">Active</label>
+      
+      <input type="radio" id="inactive" name="status" value="Inactive">
+      <label for="inactive" class="status-label">Inactive</label>
+      
+      <input type="radio" id="suspended" name="status" value="Suspended">
+      <label for="suspended" class="status-label">Suspended</label>
+    </div>
+  
+    <button type="submit" class="submit-btn">Submit</button>
+    
+  </form>
+</div>
+</body>

@@ -1,0 +1,56 @@
+.dashboard {
+  padding: 20px;
+  background-color: hsl(187, 72%, 93%); /* Light blue background color */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px white(0, 0, 255, 0.3); /* Blue shadow effect */
+  margin: 20px;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: skyblue;
+  color: #e0f7fa;
+  padding: 10px;
+  border-radius: 8px; /* Make the corners of the entire header rounded */
+  text-align: center;
+}
+
+.dashboard-header h1 {
+  margin: 0;
+  text-align: center; /* Remove default margin */
+}
+
+  
+
+.add-user-btn {
+  background-color: #ffffff; /* White background for button */
+  color: #000000;
+  border: none;
+  padding: 10px 20px; /* Make the button size small and comfortable */
+  border-radius: 4px; /* Rounded corners for the button */
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow effect for the button */
+}
+
+.add-user-btn:hover {
+  background-color: #f2f2f2; /* Slightly darker on hover */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px; /* Add some space between the header and the table */
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+  
+}

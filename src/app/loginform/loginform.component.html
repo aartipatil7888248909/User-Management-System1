@@ -1,0 +1,28 @@
+<body>
+<div class="login-container">
+    <div class="login-box">
+        <h2>Login Form</h2>
+        <form>
+            <div class="input-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" class="button" id="loginButton" (click)="login()">Login</button>
+            <a href="/forgot-password" class="forgot-password">Forgot Password?</a>
+            <div class="social-login">
+                <a href="#" onclick="window.open('(link unavailable) email&response_type=token', 'facebookLogin', 'width=500,height=500')">
+                    <img src="assets/facebook.png" class="social-signin-img">
+                    <span class="social-login-text">Sign in with Facebook</span>
+                </a>
+                <a href="#" onclick="window.open('https://api.twitter.com/oauth/authenticate?oauth_token=YOUR_TWITTER_OAUTH_TOKEN', 'twitterLogin', 'width=500,height=500')">
+                    <img src="assets/google.png" class="social-signin-img">
+                    <span class="social-login-text">Sign in with Google</span>
+                </a>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,174 @@
+/* Apply light sky-blue background to the entire page */
+/* Apply light sky-blue background to the entire page */
+body {
+  background-color: skyblue; /* Fallback color */
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('https://img.freepik.com/free-photo/workplace-with-blue-office-supplies_23-2147843328.jpg');
+  background-size: cover; /* This ensures the image covers the entire background */
+  background-repeat: no-repeat; /* This prevents the image from repeating */
+  background-position: center;
+  height: 100vh; /* Full viewport height */
+  display: flex; /* Allows centering with flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center;
+   /* Center vertically */
+
+}
+
+
+/* Center the form container on the page */
+.add-user-container {
+  background-color: lightblue; /* Fallback color for background */
+  border-radius: 10px; /* Rounded corners for a softer look */
+  width: 60%; /* Width of the box */
+  max-width: 90%; /* Ensure the box doesn't exceed the width on smaller screens */
+  padding: 10px;
+  margin: 40px auto; /* Centers the container horizontally */
+  box-shadow: 0 0 15px rgba(135, 206, 235, 0.3); /* Light shadow for a subtle effect */
+  border: 2px solid transparent; /* Transparent border to create a border effect with box-shadow */
+  border-image: linear-gradient(45deg, #1E90FF, #87CEEB); /* Gradient border color */
+  border-image-slice: 1; /* Ensures the gradient covers the entire border */
+  background-image: url('https://img.freepik.com/free-photo/artistic-blurry-colorful-wallpaper-background_58702-8189.jpg'); /* Background image */
+  background-size: cover; /* Cover the entire container */
+  background-repeat: no-repeat; /* Prevent repeating the image */
+  background-position: left;
+  left: 0; /* Center the image */
+  width: 30%;
+  container-align: left;
+
+}
+
+
+
+/* Style the heading */
+.add-user-heading {
+  background-color: #f0f8ff; /* Light sky blue background color */
+  border-radius: 10px; /* Rounded corners */
+  border: 2px solid black; /* Black border with 2px width */
+  text-align: center; /* Center the text */
+  color: #333; /* Dark gray text color */
+  margin: 0 auto 30px auto; /* Center the box horizontally and add space below */
+  font-size: 24px; /* Font size */
+  width: 50%; /* Adjust the width as needed */
+  padding: 10px; /* Padding inside the box */
+}
+
+
+
+/* Style the form */
+.add-user-form {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+/* Style each label and input pair */
+.add-user-form div {
+  margin-bottom: 15px;
+}
+
+/* Style the labels */
+.add-user-form label {
+  margin-bottom: 5px;
+  color: #555;
+  font-weight: bold;
+
+}
+
+/* Style the input fields */
+.add-user-form input[type="text"],
+.add-user-form input[type="date"],
+.add-user-form select {
+  width: 100%;
+  padding: 9px;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+/* Hide radio buttons */
+.add-user-form input[type="radio"] {
+  display: none;
+}
+
+/* Style the labels associated with radio buttons */
+.add-user-form label.status-label {
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-right: 10px;
+  color: white;
+}
+
+/* Active button - red color */
+.add-user-form label[for="active"] {
+  background-color: red;
+  padding:4px 5px;
+  border-radius: 10px; 
+  }
+    
+  
+  
+
+
+/* Inactive button - green color */
+.add-user-form label[for="inactive"] {
+  background-color: green;
+  padding:4px 5px;
+  border-radius: 10px; 
+}
+
+/* Suspended button - blue color */
+.add-user-form label[for="suspended"] {
+  background-color: blue;
+  padding:4px 5px;
+  border-radius: 10px; 
+}
+
+/* Change label background when the radio button is checked */
+.add-user-form input[type="radio"]#active:checked + label[for="active"] {
+  background-color: darkred;
+  padding:4px 5px;
+}
+
+.add-user-form input[type="radio"]#inactive:checked + label[for="inactive"] {
+  background-color: darkgreen;
+  padding:4px 5px;
+}
+
+.add-user-form input[type="radio"]#suspended:checked + label[for="suspended"] {
+  background-color: darkblue;
+  padding:4px 5px;
+}
+
+/* Style the submit button */
+.submit-btn {
+  background-color: #1E90FF; /* Dodger blue color */
+  color: white;
+  padding: 10px;
+  border: 2px solid red; /* Red border for submit button */
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+}
+
+.submit-btn:hover {
+  background-color: #1C86EE; /* Darker dodger blue on hover */
+}
+
+/* Align the form contents to the left */
+.add-user-form label,
+.add-user-form input,
+.add-user-form select {
+  text-align: left;
+}
+
+/* Add some padding and spacing to the radio buttons */
+.add-user-form div:nth-child(5) {
+  display: flex;
+  align-items: center;
+}

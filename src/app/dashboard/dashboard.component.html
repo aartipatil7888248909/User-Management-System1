@@ -1,0 +1,34 @@
+<div class="dashboard">
+  <div class="dashboard-header">
+    <h1>User Management</h1>
+    <button class="add-user-btn" (click)="addUser()">Add New User</button>
+  </div>
+  <table>
+    <thead>
+      <tr>
+        <th>Profile Picture</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Date Created</th>
+        <th>Role</th>
+        <th>Status</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of service.users; let i = index">
+        <td><img [src]="user.profilePicture" alt="Profile Picture" width="50"></td>
+        <td>{{ user.firstName }}</td>
+        <td>{{ user.lastName }}</td>
+        <td>{{ user.dateCreated | date: 'MM/dd/yyyy' }}</td>
+        <td>{{ user.role }}</td>
+        <td>{{ user.status }}</td>
+        <td>
+          <button (click)="viewUpdateUser(user)">⚙</button>
+          <button (click)="removeUser(i)">❌</button>
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
